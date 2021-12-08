@@ -8,27 +8,22 @@ function Booklist() {
   return (
     <section className='booklist'>
       <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   );
 }
 
+const author = 'by William Patrick Martin';
 const Book = () => {
+  const title = 'The Mother of All Booklists: The 500 Most Recommended Nonfiction Reads for Ages 3 to 103';
   return (
     <article className='book'>
-      <Image></Image>
-      <Title />
-      <Author />
+      <img src="https://m.media-amazon.com/images/I/81UoflSDrCL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
+      <h1>{title}</h1>
+      <h4>{author.toUpperCase()}</h4>
+      {/* <p> {let x = 6}</p> error */}
+      <p>{6 + 6}</p>
     </article>
   );
 };
-
-const Image = () => (
-  <img src="https://m.media-amazon.com/images/I/81UoflSDrCL._AC_UY327_FMwebp_QL65_.jpg" alt="" />
-);
-const Title = () => <h1>The Mother of All Booklists: The 500 Most Recommended Nonfiction Reads for Ages 3 to 103 </h1>;
-const Author = () => <h4 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.25rem' }}> by William Patrick Martin</h4>;
 
 ReactDOM.render(<Booklist />, document.getElementById('root'));
