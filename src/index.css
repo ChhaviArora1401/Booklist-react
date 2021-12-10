@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color: #aeaeae;
+    color: #494949;
 }
 
 .booklist {
@@ -21,10 +21,11 @@ h1 {
     display: grid;
     gap: 2rem;
 }
+
 @media screen and (min-width:768px) {
     .booklist {
         grid-template-columns: repeat(3, 1fr);
-        align-items: start;
+        /* align-items: start; */
     }
 }
 
